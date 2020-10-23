@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mobile First</title>
+    <!-- attach styles here -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="css/mobile.css" />
+    <link
+      rel="stylesheet"
+      media="only screen and (min-width:720px)"
+      href="css/desktop.css"
+    />
+
+    <link rel="stylesheet" href="css/mobileForm.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo">
+          <img src="images/webLogo.svg" alt="" />
+        </div>
+
+        <div class="loginLinks">
+          <ul>
+            <li><a href="">Login</a></li>
+            <li><a href="">Register</a></li>
+          </ul>
+        </div>
+        <!-- Burger menu here -->
+        <div class="burgerMenu">
+          <div class="bars">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </div>
+
+        <!-- Search input here -->
+        <div class="search">
+          <form action="">
+            <input type="search" name="search" aria-label="Search Term" />
+            <button type="submit" aria-label="Search">
+              <i class="fa fa-search"></i>
+            </button>
+          </form>
+        </div>
+      </header>
+      <nav class="mainNav">
+        <div class="row">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="staff.html">Staff</a></li>
+            <li><a href="opportunities.html">Opportunties</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="mainContent">
+        <main>
+          <div class="mainheading">
+            <h1>Contact Us<br /><span id="viewPortData"></span></h1>
+          </div>
+
+          <div class="form">
+            <!--			form here-->
+
+            <form action="">
+              <div>
+                <label for="surname">Surname</label>
+                <input type="text" name="surname" id="surname" />
+              </div>
+              <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" />
+              </div>
+              <div>
+                <label for="comments">Comments</label>
+                <textarea
+                  name="comments"
+                  id="comments"
+                  cols="30"
+                  rows="10"
+                ></textarea>
+              </div>
+
+              <div class="inlineLabels">
+                <p>Gender</p>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="male" value="m" />
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="female" value="f" />
+                <label for="other">Prefer not to say</label>
+                <input type="radio" name="gender" id="other" value="n" />
+              </div>
+
+              <div>
+                <label for="marketing">How did you hear about us?</label>
+                <select name="marketing" id="marketing">
+                  <option value="Web">Web</option>
+                  <option value="Friend">Friend</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="mailingList">Join our mailing list</label>
+
+                <input
+                  type="checkbox"
+                  name="mailingList"
+                  id="mailingList"
+                  value="1"
+                />
+              </div>
+
+              <div>
+                <input type="submit" value="Contact Us" />
+              </div>
+            </form>
+          </div>
+        </main>
+        <div class="sideBar">
+          <h3>Resources</h3>
+          <ul>
+            <li><a href="">Latest published stuff</a></li>
+            <li><a href="">Archive released</a></li>
+          </ul>
+          <h3>News</h3>
+          <ul>
+            <li><a href="">Latest published stuff</a></li>
+            <li><a href="">Archive released</a></li>
+          </ul>
+        </div>
+      </div>
+      <footer>
+        <div class="row">
+          <address>
+            123 The High Street<br />
+            Little SmallTown<br />
+            Sheffield<br />
+            S99 7ZZ
+          </address>
+          <div class="footerSocialLinks">
+            <ul>
+              <li>
+                <a href="" aria-label="Twitter"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a href="" aria-label="Facebook"
+                  ><i class="fab fa-facebook"></i
+                ></a>
+              </li>
+              <li>
+                <a href="" aria-label="Instagram"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a href="" aria-label="YouTube"
+                  ><i class="fab fa-youtube"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <ul class="footerLinks">
+            <li><a href="">Terms and Conditions</a></li>
+            <li><a href="">Accessibility</a></li>
+            <li><a href="">Legal Information</a></li>
+            <li><a href="">Privacy and GDPR</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    <!-- Javascript links here -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,96 @@
+/* CSS Document */
+.container {
+    max-width: 1366px;
+    /* 1366x768	16:9*/
+    margin: auto;
+}
+  .burgerMenu,
+  .mobH1 {
+    display: none;
+  }
+  header,
+  .mainContent,
+  .row {
+    max-width: 1200px;
+    padding: 0 5px;
+    margin: auto;
+  }
+
+  header nav ul li h1 {
+    display: block;
+    padding: 0;
+    margin: 5px;
+    font-size: 1.2rem;
+    color: #ddeaf2;
+  }
+  .banner {
+    background-image: url(../images/banner1-1366.jpg);
+    background-repeat: no-repeat;
+    height: 200px;
+  }
+
+  .mainNav {
+    padding: 8px 0;
+    height: auto;
+  }
+  .mainNav .row ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .mainNav > div > ul > li {
+    border: none;
+    padding: 0;
+  }
+
+  header nav ul li h1 {
+    display: block;
+    padding: 0;
+    margin: 5px;
+    font-size: 1.2rem;
+    color: #ddeaf2;
+  }
+  .banner {
+    background-image: url(../images/banner1-1366.jpg);
+    background-repeat: no-repeat;
+    height: 200px;
+  }
+  .banner h2 {
+    top: 20px;
+    left: 120px;
+    font-size: 8em;
+  }
+  .mainContent {
+    display: flex;
+  }
+
+  main {
+    flex-basis: 70%;
+  }
+
+  .sideBar {
+    background-color: #ddceaa;
+    flex-basis: 30%;
+  }
+
+  main {
+    flex-basis: 70%;
+  }
+ 
+  .newsItem {
+    flex-basis: 33%;
+  }
+  .strapline {
+    display: flex;
+  }
+  .straplinetxt,
+  .straplineImg {
+    padding: 0 5px;
+    flex-basis: 50%;
+
+  }
+  .straplineImg > img {
+    width: 100%;
+  
+  }
+  
